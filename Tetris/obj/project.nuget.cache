@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "PI9CSewoWdE=",
+  "dgSpecHash": "qTxBq7tYSn8=",
   "success": true,
-  "projectFilePath": "C:\\Users\\dorge\\Desktop\\tetris\\Tetris\\Tetris\\Tetris.csproj",
+  "projectFilePath": "C:\\Users\\dorge\\Desktop\\Tetris\\Tetris\\Tetris.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\dorge\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\5.0.17\\microsoft.netcore.app.host.win-x64.5.0.17.nupkg.sha512"
   ],

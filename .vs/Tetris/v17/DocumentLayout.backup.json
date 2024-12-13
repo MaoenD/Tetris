@@ -1,21 +1,9 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\dorge\\Desktop\\tetris\\Tetris\\",
+  "WorkspaceRootPath": "C:\\Users\\dorge\\Desktop\\Tetris\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{F6DE45F0-1DFF-48AF-8AD7-D8A91271C81E}|Tetris\\Tetris.csproj|c:\\users\\dorge\\desktop\\tetris\\tetris\\tetris\\grille.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F6DE45F0-1DFF-48AF-8AD7-D8A91271C81E}|Tetris\\Tetris.csproj|solutionrelative:tetris\\grille.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F6DE45F0-1DFF-48AF-8AD7-D8A91271C81E}|Tetris\\Tetris.csproj|c:\\users\\dorge\\desktop\\tetris\\tetris\\tetris\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F6DE45F0-1DFF-48AF-8AD7-D8A91271C81E}|Tetris\\Tetris.csproj|solutionrelative:tetris\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F6DE45F0-1DFF-48AF-8AD7-D8A91271C81E}|Tetris\\Tetris.csproj|c:\\users\\dorge\\desktop\\tetris\\tetris\\tetris\\tetris.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
-      "RelativeMoniker": "D:0:0:{F6DE45F0-1DFF-48AF-8AD7-D8A91271C81E}|Tetris\\Tetris.csproj|solutionrelative:tetris\\tetris.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F6DE45F0-1DFF-48AF-8AD7-D8A91271C81E}|Tetris\\Tetris.csproj|c:\\users\\dorge\\desktop\\tetris\\tetris\\tetris\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "AbsoluteMoniker": "D:0:0:{F6DE45F0-1DFF-48AF-8AD7-D8A91271C81E}|Tetris\\Tetris.csproj|c:\\users\\dorge\\desktop\\tetris\\tetris\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
       "RelativeMoniker": "D:0:0:{F6DE45F0-1DFF-48AF-8AD7-D8A91271C81E}|Tetris\\Tetris.csproj|solutionrelative:tetris\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     }
   ],
@@ -26,57 +14,26 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 2,
           "Children": [
             {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "Tetris",
-              "DocumentMoniker": "C:\\Users\\dorge\\Desktop\\tetris\\Tetris\\Tetris\\Tetris.csproj",
-              "RelativeDocumentMoniker": "Tetris\\Tetris.csproj",
-              "ToolTip": "C:\\Users\\dorge\\Desktop\\tetris\\Tetris\\Tetris\\Tetris.csproj",
-              "RelativeToolTip": "Tetris\\Tetris.csproj",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2024-12-13T17:41:59.555Z",
-              "EditorCaption": ""
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
             },
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "grille.cs",
-              "DocumentMoniker": "C:\\Users\\dorge\\Desktop\\tetris\\Tetris\\Tetris\\grille.cs",
-              "RelativeDocumentMoniker": "Tetris\\grille.cs",
-              "ToolTip": "C:\\Users\\dorge\\Desktop\\tetris\\Tetris\\Tetris\\grille.cs*",
-              "RelativeToolTip": "Tetris\\grille.cs*",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAuAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-13T17:42:17.953Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
               "Title": "MainWindow.xaml",
-              "DocumentMoniker": "C:\\Users\\dorge\\Desktop\\tetris\\Tetris\\Tetris\\MainWindow.xaml",
+              "DocumentMoniker": "C:\\Users\\dorge\\Desktop\\Tetris\\Tetris\\MainWindow.xaml",
               "RelativeDocumentMoniker": "Tetris\\MainWindow.xaml",
-              "ToolTip": "C:\\Users\\dorge\\Desktop\\tetris\\Tetris\\Tetris\\MainWindow.xaml*",
-              "RelativeToolTip": "Tetris\\MainWindow.xaml*",
+              "ToolTip": "C:\\Users\\dorge\\Desktop\\Tetris\\Tetris\\MainWindow.xaml",
+              "RelativeToolTip": "Tetris\\MainWindow.xaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2024-12-13T17:39:18.47Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "MainWindow.xaml.cs",
-              "DocumentMoniker": "C:\\Users\\dorge\\Desktop\\tetris\\Tetris\\Tetris\\MainWindow.xaml.cs",
-              "RelativeDocumentMoniker": "Tetris\\MainWindow.xaml.cs",
-              "ToolTip": "C:\\Users\\dorge\\Desktop\\tetris\\Tetris\\Tetris\\MainWindow.xaml.cs",
-              "RelativeToolTip": "Tetris\\MainWindow.xaml.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-13T17:39:14.03Z",
+              "WhenOpened": "2024-12-13T18:22:53Z",
               "EditorCaption": ""
             }
           ]
