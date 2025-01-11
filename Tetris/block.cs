@@ -44,8 +44,8 @@ namespace Tetris
 
         public void Move(int rows, int columns)
         {
-            offset.Row = rows;
-            offset.Column = columns;
+            offset.Row += rows;
+            offset.Column += columns;
         }
 
         public void Reset()
@@ -53,6 +53,11 @@ namespace Tetris
             rotationstatus = 0;
             offset.Row = Startoffset.Row;
             offset.Column = Startoffset.Column;
+        }
+
+        public int GetRaw()
+        {
+            return offset.Row;
         }
     }
 }

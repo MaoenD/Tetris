@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2012/06/nuspec.xsd">
+  <metadata>
+    <id>Tetris</id>
+    <version>1.0.0</version>
+    <authors>Tetris</authors>
+    <description>Package Description</description>
+    <repository type="git" commit="4de5cd6566018688ff7f4672b1d90e7bb7e3b355" />
+    <dependencies>
+      <group targetFramework="net5.0-windows7.0" />
+    </dependencies>
+    <frameworkReferences>
+      <group targetFramework="net5.0-windows7.0">
+        <frameworkReference name="Microsoft.WindowsDesktop.App.WPF" />
+      </group>
+    </frameworkReferences>
+  </metadata>
+  <files>
+    <file src="C:\Users\liena\Travaux\B2 - Info\Tétris\Tetris\Tetris\bin\Debug\net5.0-windows\Tetris.runtimeconfig.json" target="lib\net5.0-windows7.0\Tetris.runtimeconfig.json" />
+    <file src="C:\Users\liena\Travaux\B2 - Info\Tétris\Tetris\Tetris\bin\Debug\net5.0-windows\Tetris.dll" target="lib\net5.0-windows7.0\Tetris.dll" />
+  </files>
+</package>

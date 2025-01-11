@@ -14,6 +14,16 @@ namespace Tetris
             {
                 currentBlock = value;
                 currentBlock.Reset();
+
+                for (int i = 0; i < 2; i++)
+                {
+                    currentBlock.Move(1, 0);
+
+                    if (!Blockfits())
+                    {
+                        currentBlock.Move(-1, 0);
+                    }
+                }
             }
         }
 
@@ -21,11 +31,18 @@ namespace Tetris
         public Queue Queue { get; }
         public bool Gameover { get; private set; }
 
+        public int Score { get; private set; }
+
+        public Block HeldBlock { get; private set; }
+        public bool CanHold { get; private set; }
+
         public Gamestatus()
         {
             Gamegrid = new Gamegrid(22, 10);
             Queue = new Queue();
             currentBlock = Queue.Getndupdate();
+            Gameover = false;
+            CanHold = true;
         }
 
         private bool Blockfits()
@@ -40,12 +57,33 @@ namespace Tetris
             return true;
         }
 
+        public void HoldBlock()
+        {
+            if (!CanHold)
+            {
+                return;
+            }
+
+            if (HeldBlock == null)
+            {
+                HeldBlock = CurrentBlock;
+                CurrentBlock = Queue.Getndupdate();
+            } else
+            {
+                Block tmp = CurrentBlock;
+                CurrentBlock = HeldBlock;
+                HeldBlock = tmp;
+            }
+            
+            CanHold = false;
+        }
+
         public void RotateCW()
         {
             currentBlock.RotateCW();
             if (!Blockfits())
             {
-                currentBlock.RotateCW();
+                currentBlock.RotateCCW();
             }
         }
 
@@ -54,7 +92,7 @@ namespace Tetris
             currentBlock.RotateCCW();
             if (!Blockfits())
             {
-                currentBlock.RotateCCW();
+                currentBlock.RotateCW();
             }
         }
 
@@ -88,7 +126,7 @@ namespace Tetris
                 Gamegrid[p.Row, p.Column] = currentBlock.Id;
             }
 
-            Gamegrid.Clearfullrow();
+            Score += Gamegrid.Clearfullrow();
 
             if (Gameisover())
             {
@@ -97,6 +135,7 @@ namespace Tetris
             else
             {
                 CurrentBlock = Queue.Getndupdate();
+                CanHold = true;
             }
         }
 
@@ -108,6 +147,36 @@ namespace Tetris
                 currentBlock.Move(-1, 0);
                 Placeblock();
             }
+        }
+
+        private int TileDropDistance(Position p)
+        {
+            int drop = 0;
+
+            while (Gamegrid.Isempty(p.Row + drop +1, p.Column))
+            {
+                drop++;
+            }
+
+            return drop;
+        }
+
+        public int BlockDropDistance()
+        {
+            int drop = Gamegrid.Rows;
+
+            foreach (Position p in currentBlock.Tileposition())
+            {
+                drop = System.Math.Min(drop, TileDropDistance(p));
+            }
+
+            return drop;
+        }
+
+        public void DropBlock()
+        {
+            CurrentBlock.Move(BlockDropDistance(), 0);
+            Placeblock();
         }
     }
 }

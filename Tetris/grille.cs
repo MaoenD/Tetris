@@ -1,4 +1,5 @@
-﻿using System.Windows;
+﻿using System;
+using System.Windows;
 using System.Windows.Controls.Primitives;
 
 namespace Tetris
@@ -24,7 +25,7 @@ namespace Tetris
 
         public bool Isinside(int r, int c)
         {
-            return r >= 0 && r < Rows && c < Columns;
+            return r >= 0 && r < Rows && c >= 0 && c < Columns;
         }
 
         public bool Isempty(int r, int c)
@@ -46,7 +47,7 @@ namespace Tetris
 
         public bool Isrowempty(int r)
         {
-            for (int c = 0; r < Columns; c++)
+            for (int c = 0; c < Columns; c++)
             {
                 if (grid[r, c] != 0)
                 {
@@ -79,6 +80,7 @@ namespace Tetris
             int cleared = 0;
             for (int r = Rows-1; r >= 0; r--)
             {
+                Console.WriteLine(r);
                 if (Isrowfull(r))
                 {
                     Clearrow(r);
