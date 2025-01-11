@@ -159,6 +159,8 @@ namespace Tetris
             FinalScoreText.Text = $"Score : {gamestate.Score}";
         }
 
+        private KeyBindings keyBindings = new KeyBindings();
+
         private void Window_KeyDown(object sender, KeyEventArgs e)
         {
             if (gamestate.Gameover)
@@ -166,35 +168,38 @@ namespace Tetris
                 return;
             }
 
-            switch (e.Key)
+            if (e.Key == keyBindings.MoveLeft)
             {
-                case Key.Left:
-                    gamestate.Moveleft();
-                    break;
-                case Key.Right:
-                    gamestate.Moveright();
-                    break;
-                case Key.Down:
-                    gamestate.Movedown();
-                    break;
-                case Key.Up:
-                    gamestate.RotateCW();
-                    break;
-                case Key.Z:
-                    gamestate.RotateCCW();
-                    break;
-                case Key.C:
-                    gamestate.HoldBlock();
-                    break;
-                case Key.Space:
-                    gamestate.DropBlock();
-                    break;
-                default:
-                    return;
+                gamestate.Moveleft();
+            }
+            else if (e.Key == keyBindings.MoveRight)
+            {
+                gamestate.Moveright();
+            }
+            else if (e.Key == keyBindings.MoveDown)
+            {
+                gamestate.Movedown();
+            }
+            else if (e.Key == keyBindings.RotateCW)
+            {
+                gamestate.RotateCW();
+            }
+            else if (e.Key == keyBindings.RotateCCW)
+            {
+                gamestate.RotateCCW();
+            }
+            else if (e.Key == keyBindings.HoldBlock)
+            {
+                gamestate.HoldBlock();
+            }
+            else if (e.Key == keyBindings.DropBlock)
+            {
+                gamestate.DropBlock();
             }
 
             Draw(gamestate);
         }
+
 
         private async void GameCanvas_Loaded(object sender, RoutedEventArgs e)
         {
@@ -210,8 +215,10 @@ namespace Tetris
 
         private void StartGame_Click(object sender, RoutedEventArgs e)
         {
+            gamestate = new Gamestatus();
             MainMenu.Visibility = Visibility.Hidden;
             Game.Visibility = Visibility.Visible;
+            GameLoop();
         }
 
         private void Exit_Click(object sender, RoutedEventArgs e)
@@ -219,5 +226,61 @@ namespace Tetris
             Application.Current.Shutdown();
         }
 
+        private void Menu_Click(object sender, RoutedEventArgs e)
+        {
+            MainMenu.Visibility = Visibility.Visible;
+            Game.Visibility = Visibility.Hidden;
+            GameOverMenu.Visibility = Visibility.Hidden;
+        }
+
+        private void Option_Click(object sender, RoutedEventArgs e)
+        {
+            MainMenu.Visibility = Visibility.Hidden;
+            OptionMenu.Visibility = Visibility.Visible;
+        }
+
+        private void Window_Loaded(object sender, RoutedEventArgs e)
+        {
+            foreach (Key key in Enum.GetValues(typeof(Key)))
+            {
+                MoveLeftComboBox.Items.Add(key);
+                MoveRightComboBox.Items.Add(key);
+                MoveDownComboBox.Items.Add(key);
+                RotateCWComboBox.Items.Add(key);
+                RotateCCWComboBox.Items.Add(key);
+                HoldBlockComboBox.Items.Add(key);
+                DropBlockComboBox.Items.Add(key);
+            }
+
+            MoveLeftComboBox.SelectedItem = keyBindings.MoveLeft;
+            MoveRightComboBox.SelectedItem = keyBindings.MoveRight;
+            MoveDownComboBox.SelectedItem = keyBindings.MoveDown;
+            RotateCWComboBox.SelectedItem = keyBindings.RotateCW;
+            RotateCCWComboBox.SelectedItem = keyBindings.RotateCCW;
+            HoldBlockComboBox.SelectedItem = keyBindings.HoldBlock;
+            DropBlockComboBox.SelectedItem = keyBindings.DropBlock;
+        }
+
+
+        private void SaveKeyBindings_Click(object sender, RoutedEventArgs e)
+        {
+            keyBindings.MoveLeft = (Key)MoveLeftComboBox.SelectedItem;
+            keyBindings.MoveRight = (Key)MoveRightComboBox.SelectedItem;
+            keyBindings.MoveDown = (Key)MoveDownComboBox.SelectedItem;
+            keyBindings.RotateCW = (Key)RotateCWComboBox.SelectedItem;
+            keyBindings.RotateCCW = (Key)RotateCCWComboBox.SelectedItem;
+            keyBindings.HoldBlock = (Key)HoldBlockComboBox.SelectedItem;
+            keyBindings.DropBlock = (Key)DropBlockComboBox.SelectedItem;
+
+            MainMenu.Visibility = Visibility.Visible;
+            OptionMenu.Visibility = Visibility.Hidden;
+        }
+
+        private void KeyBindingComboBox_PreviewKeyDown(object sender, KeyEventArgs e)
+        {
+            ComboBox comboBox = sender as ComboBox;
+            comboBox.SelectedItem = e.Key;
+            e.Handled = true;
+        }
     }
 }
