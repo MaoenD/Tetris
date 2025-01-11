@@ -19,6 +19,7 @@
     <None Remove="Images\Block-T.png" />
     <None Remove="Images\Block-Z.png" />
     <None Remove="Images\Icon.ico" />
+    <None Remove="Images\TetrisLogo.png" />
     <None Remove="Images\TileBlue.png" />
     <None Remove="Images\TileCyan.png" />
     <None Remove="Images\TileEmpty.png" />
@@ -43,6 +44,7 @@
     <Resource Include="Images\Block-T.png" />
     <Resource Include="Images\Block-Z.png" />
     <Resource Include="Images\Icon.ico" />
+    <Resource Include="Images\TetrisLogo.png" />
     <Resource Include="Images\TileBlue.png" />
     <Resource Include="Images\TileCyan.png" />
     <Resource Include="Images\TileEmpty.png" />

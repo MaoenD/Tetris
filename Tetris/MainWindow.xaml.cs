@@ -73,7 +73,7 @@ namespace Tetris
                         Height = cellSize,
                     };
 
-                    Canvas.SetTop(imageControl, (r - 2) * cellSize+10);
+                    Canvas.SetTop(imageControl, (r - 2) * cellSize + 10);
                     Canvas.SetLeft(imageControl, c * cellSize);
                     GameCanvas.Children.Add(imageControl);
                     imageControls[r, c] = imageControl;
@@ -204,8 +204,20 @@ namespace Tetris
         private async void PlayAgain_Click(object sender, RoutedEventArgs e)
         {
             gamestate = new Gamestatus();
-            GameOverMenu.Visibility= Visibility.Hidden;
+            GameOverMenu.Visibility = Visibility.Hidden;
             await GameLoop();
         }
+
+        private void StartGame_Click(object sender, RoutedEventArgs e)
+        {
+            MainMenu.Visibility = Visibility.Hidden;
+            Game.Visibility = Visibility.Visible;
+        }
+
+        private void Exit_Click(object sender, RoutedEventArgs e)
+        {
+            Application.Current.Shutdown();
+        }
+
     }
 }
