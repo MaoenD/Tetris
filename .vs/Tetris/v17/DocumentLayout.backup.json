@@ -3,8 +3,28 @@
   "WorkspaceRootPath": "C:\\Users\\liena\\Travaux\\B2 - Info\\T\u00E9tris\\Tetris\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{F6DE45F0-1DFF-48AF-8AD7-D8A91271C81E}|Tetris\\Tetris.csproj|c:\\users\\liena\\travaux\\b2 - info\\t\u00E9tris\\tetris\\tetris\\block.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F6DE45F0-1DFF-48AF-8AD7-D8A91271C81E}|Tetris\\Tetris.csproj|solutionrelative:tetris\\block.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{F6DE45F0-1DFF-48AF-8AD7-D8A91271C81E}|Tetris\\Tetris.csproj|c:\\users\\liena\\travaux\\b2 - info\\t\u00E9tris\\tetris\\tetris\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{F6DE45F0-1DFF-48AF-8AD7-D8A91271C81E}|Tetris\\Tetris.csproj|solutionrelative:tetris\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F6DE45F0-1DFF-48AF-8AD7-D8A91271C81E}|Tetris\\Tetris.csproj|c:\\users\\liena\\travaux\\b2 - info\\t\u00E9tris\\tetris\\tetris\\gamestatus.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F6DE45F0-1DFF-48AF-8AD7-D8A91271C81E}|Tetris\\Tetris.csproj|solutionrelative:tetris\\gamestatus.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F6DE45F0-1DFF-48AF-8AD7-D8A91271C81E}|Tetris\\Tetris.csproj|c:\\users\\liena\\travaux\\b2 - info\\t\u00E9tris\\tetris\\tetris\\jblock.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F6DE45F0-1DFF-48AF-8AD7-D8A91271C81E}|Tetris\\Tetris.csproj|solutionrelative:tetris\\jblock.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F6DE45F0-1DFF-48AF-8AD7-D8A91271C81E}|Tetris\\Tetris.csproj|c:\\users\\liena\\travaux\\b2 - info\\t\u00E9tris\\tetris\\tetris\\grille.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F6DE45F0-1DFF-48AF-8AD7-D8A91271C81E}|Tetris\\Tetris.csproj|solutionrelative:tetris\\grille.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F6DE45F0-1DFF-48AF-8AD7-D8A91271C81E}|Tetris\\Tetris.csproj|c:\\users\\liena\\travaux\\b2 - info\\t\u00E9tris\\tetris\\tetris\\save\\save.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{F6DE45F0-1DFF-48AF-8AD7-D8A91271C81E}|Tetris\\Tetris.csproj|solutionrelative:tetris\\save\\save.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{F6DE45F0-1DFF-48AF-8AD7-D8A91271C81E}|Tetris\\Tetris.csproj|c:\\users\\liena\\travaux\\b2 - info\\t\u00E9tris\\tetris\\tetris\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
@@ -17,22 +37,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{F6DE45F0-1DFF-48AF-8AD7-D8A91271C81E}|Tetris\\Tetris.csproj|c:\\users\\liena\\travaux\\b2 - info\\t\u00E9tris\\tetris\\tetris\\position.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{F6DE45F0-1DFF-48AF-8AD7-D8A91271C81E}|Tetris\\Tetris.csproj|solutionrelative:tetris\\position.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F6DE45F0-1DFF-48AF-8AD7-D8A91271C81E}|Tetris\\Tetris.csproj|c:\\users\\liena\\travaux\\b2 - info\\t\u00E9tris\\tetris\\tetris\\gamestatus.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F6DE45F0-1DFF-48AF-8AD7-D8A91271C81E}|Tetris\\Tetris.csproj|solutionrelative:tetris\\gamestatus.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F6DE45F0-1DFF-48AF-8AD7-D8A91271C81E}|Tetris\\Tetris.csproj|c:\\users\\liena\\travaux\\b2 - info\\t\u00E9tris\\tetris\\tetris\\grille.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F6DE45F0-1DFF-48AF-8AD7-D8A91271C81E}|Tetris\\Tetris.csproj|solutionrelative:tetris\\grille.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F6DE45F0-1DFF-48AF-8AD7-D8A91271C81E}|Tetris\\Tetris.csproj|c:\\users\\liena\\travaux\\b2 - info\\t\u00E9tris\\tetris\\tetris\\block.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F6DE45F0-1DFF-48AF-8AD7-D8A91271C81E}|Tetris\\Tetris.csproj|solutionrelative:tetris\\block.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F6DE45F0-1DFF-48AF-8AD7-D8A91271C81E}|Tetris\\Tetris.csproj|c:\\users\\liena\\travaux\\b2 - info\\t\u00E9tris\\tetris\\tetris\\jblock.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F6DE45F0-1DFF-48AF-8AD7-D8A91271C81E}|Tetris\\Tetris.csproj|solutionrelative:tetris\\jblock.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -42,11 +46,11 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 6,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 8,
               "Title": "Position.cs",
               "DocumentMoniker": "C:\\Users\\liena\\Travaux\\B2 - Info\\T\u00E9tris\\Tetris\\Tetris\\Position.cs",
               "RelativeDocumentMoniker": "Tetris\\Position.cs",
@@ -55,7 +59,19 @@
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-01-10T16:21:24.725Z",
-              "IsPinned": true,
+              "IsPinned": true
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "block.cs",
+              "DocumentMoniker": "C:\\Users\\liena\\Travaux\\B2 - Info\\T\u00E9tris\\Tetris\\Tetris\\block.cs",
+              "RelativeDocumentMoniker": "Tetris\\block.cs",
+              "ToolTip": "C:\\Users\\liena\\Travaux\\B2 - Info\\T\u00E9tris\\Tetris\\Tetris\\block.cs",
+              "RelativeToolTip": "Tetris\\block.cs",
+              "ViewState": "AgIAAB4AAAAAAAAAAAAmwEAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-12T19:31:09.022Z",
               "EditorCaption": ""
             },
             {
@@ -72,7 +88,20 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 5,
+              "Title": "save.json",
+              "DocumentMoniker": "C:\\Users\\liena\\Travaux\\B2 - Info\\T\u00E9tris\\Tetris\\Tetris\\Save\\save.json",
+              "RelativeDocumentMoniker": "Tetris\\Save\\save.json",
+              "ToolTip": "C:\\Users\\liena\\Travaux\\B2 - Info\\T\u00E9tris\\Tetris\\Tetris\\Save\\save.json",
+              "RelativeToolTip": "Tetris\\Save\\save.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-01-12T19:26:13.399Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
               "Title": "KeyBindings.cs",
               "DocumentMoniker": "C:\\Users\\liena\\Travaux\\B2 - Info\\T\u00E9tris\\Tetris\\Tetris\\KeyBindings.cs",
               "RelativeDocumentMoniker": "Tetris\\KeyBindings.cs",
@@ -80,12 +109,11 @@
               "RelativeToolTip": "Tetris\\KeyBindings.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-11T12:12:26.943Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-01-11T12:12:26.943Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 6,
               "Title": "MainWindow.xaml",
               "DocumentMoniker": "C:\\Users\\liena\\Travaux\\B2 - Info\\T\u00E9tris\\Tetris\\Tetris\\MainWindow.xaml",
               "RelativeDocumentMoniker": "Tetris\\MainWindow.xaml",
@@ -97,20 +125,20 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "MainWindow.xaml.cs",
               "DocumentMoniker": "C:\\Users\\liena\\Travaux\\B2 - Info\\T\u00E9tris\\Tetris\\Tetris\\MainWindow.xaml.cs",
               "RelativeDocumentMoniker": "Tetris\\MainWindow.xaml.cs",
               "ToolTip": "C:\\Users\\liena\\Travaux\\B2 - Info\\T\u00E9tris\\Tetris\\Tetris\\MainWindow.xaml.cs",
               "RelativeToolTip": "Tetris\\MainWindow.xaml.cs",
-              "ViewState": "AgIAAPcAAAAAAAAAAAAAAA4BAABIAAAAAAAAAA==",
+              "ViewState": "AgIAAEMBAAAAAAAAAAAswG4BAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-01-09T14:12:22.316Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 3,
               "Title": "Jblock.cs",
               "DocumentMoniker": "C:\\Users\\liena\\Travaux\\B2 - Info\\T\u00E9tris\\Tetris\\Tetris\\Jblock.cs",
               "RelativeDocumentMoniker": "Tetris\\Jblock.cs",
@@ -118,43 +146,34 @@
               "RelativeToolTip": "Tetris\\Jblock.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-10T17:15:33.487Z"
+              "WhenOpened": "2025-01-10T17:15:33.487Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 4,
               "Title": "grille.cs",
               "DocumentMoniker": "C:\\Users\\liena\\Travaux\\B2 - Info\\T\u00E9tris\\Tetris\\Tetris\\grille.cs",
               "RelativeDocumentMoniker": "Tetris\\grille.cs",
               "ToolTip": "C:\\Users\\liena\\Travaux\\B2 - Info\\T\u00E9tris\\Tetris\\Tetris\\grille.cs",
               "RelativeToolTip": "Tetris\\grille.cs",
-              "ViewState": "AgIAADsAAAAAAAAAAAAgwE0AAAAhAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAqwAYAAAARAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-27T15:38:14.884Z"
+              "WhenOpened": "2024-12-27T15:38:14.884Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 2,
               "Title": "Gamestatus.cs",
               "DocumentMoniker": "C:\\Users\\liena\\Travaux\\B2 - Info\\T\u00E9tris\\Tetris\\Tetris\\Gamestatus.cs",
               "RelativeDocumentMoniker": "Tetris\\Gamestatus.cs",
               "ToolTip": "C:\\Users\\liena\\Travaux\\B2 - Info\\T\u00E9tris\\Tetris\\Tetris\\Gamestatus.cs",
               "RelativeToolTip": "Tetris\\Gamestatus.cs",
-              "ViewState": "AgIAAJ4AAAAAAAAAAAAowLcAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAoAAAAAAAAAAAAwwCUAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-27T15:38:09.084Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "block.cs",
-              "DocumentMoniker": "C:\\Users\\liena\\Travaux\\B2 - Info\\T\u00E9tris\\Tetris\\Tetris\\block.cs",
-              "RelativeDocumentMoniker": "Tetris\\block.cs",
-              "ToolTip": "C:\\Users\\liena\\Travaux\\B2 - Info\\T\u00E9tris\\Tetris\\Tetris\\block.cs",
-              "RelativeToolTip": "Tetris\\block.cs",
-              "ViewState": "AgIAABsAAAAAAAAAAAA4wDYAAAAvAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-27T15:37:20.443Z"
+              "WhenOpened": "2024-12-27T15:38:09.084Z",
+              "EditorCaption": ""
             }
           ]
         }

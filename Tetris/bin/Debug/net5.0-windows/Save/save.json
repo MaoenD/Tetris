@@ -1,0 +1,20 @@
+{
+  "CurrentBlock": {
+    "Id": 4
+  },
+  "Gamegrid": {
+    "Rows": 22,
+    "Columns": 10
+  },
+  "Queue": {
+    "Nextblock": {
+      "Id": 2
+    }
+  },
+  "Gameover": false,
+  "Score": 1,
+  "HeldBlock": {
+    "Id": 1
+  },
+  "CanHold": false
+}

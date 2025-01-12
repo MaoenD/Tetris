@@ -42,3 +42,7 @@ C:\Users\liena\Travaux\B2 - Info\Tétris\Tetris\Tetris\obj\Debug\net5.0-windows\
 C:\Users\liena\Travaux\B2 - Info\Tétris\Tetris\Tetris\obj\Debug\net5.0-windows\Tetris.genruntimeconfig.cache
 C:\Users\liena\Travaux\B2 - Info\Tétris\Tetris\Tetris\obj\Debug\net5.0-windows\ref\Tetris.dll
 C:\Users\liena\Travaux\B2 - Info\Tétris\Tetris\Tetris\obj\Debug\net5.0-windows\Tetris_Content.g.cs
+C:\Users\liena\Travaux\B2 - Info\Tétris\Tetris\Tetris\bin\Debug\net5.0-windows\Music\FallingBlocks1.mp3
+C:\Users\liena\Travaux\B2 - Info\Tétris\Tetris\Tetris\bin\Debug\net5.0-windows\Music\FallingBlocks2.mp3
+C:\Users\liena\Travaux\B2 - Info\Tétris\Tetris\Tetris\bin\Debug\net5.0-windows\Music\FullFallingBlocks.mp3
+C:\Users\liena\Travaux\B2 - Info\Tétris\Tetris\Tetris\bin\Debug\net5.0-windows\Save\save.json

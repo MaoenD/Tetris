@@ -1,7 +1,9 @@
 ﻿using System;
+using System.IO;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using System.Text.Json;
 using System.Threading.Tasks;
 using System.Windows;
 using System.Windows.Controls;
@@ -52,9 +54,16 @@ namespace Tetris
 
         private Gamestatus gamestate = new Gamestatus();
 
+        private bool IsPaused = false;
+        private bool Stop = false;
+
+        private KeyBindings keyBindings = new KeyBindings();
+        private MediaPlayer backgroundMusicPlayer = new MediaPlayer();
+
         public MainWindow()
         {
             InitializeComponent();
+            PlayBackgroundMusic();
             imageControls = SetupGameCancas(gamestate.Gamegrid);
         }
 
@@ -147,19 +156,24 @@ namespace Tetris
         private async Task GameLoop()
         {
             Draw(gamestate);
+
             while (!gamestate.Gameover)
             {
                 int delay = Math.Max(minDelay, maxDelay - (gamestate.Score * delayDecrease));
                 await Task.Delay(delay);
-                gamestate.Movedown();
+                if (!IsPaused)
+                {
+                    gamestate.Movedown();
+                }
+                if (Stop)
+                {
+                    return;
+                }
                 Draw(gamestate);
             }
-
             GameOverMenu.Visibility = Visibility.Visible;
             FinalScoreText.Text = $"Score : {gamestate.Score}";
         }
-
-        private KeyBindings keyBindings = new KeyBindings();
 
         private void Window_KeyDown(object sender, KeyEventArgs e)
         {
@@ -168,42 +182,44 @@ namespace Tetris
                 return;
             }
 
-            if (e.Key == keyBindings.MoveLeft)
+            if (!IsPaused)
             {
-                gamestate.Moveleft();
-            }
-            else if (e.Key == keyBindings.MoveRight)
-            {
-                gamestate.Moveright();
-            }
-            else if (e.Key == keyBindings.MoveDown)
-            {
-                gamestate.Movedown();
-            }
-            else if (e.Key == keyBindings.RotateCW)
-            {
-                gamestate.RotateCW();
-            }
-            else if (e.Key == keyBindings.RotateCCW)
-            {
-                gamestate.RotateCCW();
-            }
-            else if (e.Key == keyBindings.HoldBlock)
-            {
-                gamestate.HoldBlock();
-            }
-            else if (e.Key == keyBindings.DropBlock)
-            {
-                gamestate.DropBlock();
+                if (e.Key == keyBindings.MoveLeft)
+                {
+                    gamestate.Moveleft();
+                }
+                else if (e.Key == keyBindings.MoveRight)
+                {
+                    gamestate.Moveright();
+                }
+                else if (e.Key == keyBindings.MoveDown)
+                {
+                    gamestate.Movedown();
+                }
+                else if (e.Key == keyBindings.RotateCW)
+                {
+                    gamestate.RotateCW();
+                }
+                else if (e.Key == keyBindings.RotateCCW)
+                {
+                    gamestate.RotateCCW();
+                }
+                else if (e.Key == keyBindings.HoldBlock)
+                {
+                    gamestate.HoldBlock();
+                }
+                else if (e.Key == keyBindings.DropBlock)
+                {
+                    gamestate.DropBlock();
+                }
+                else if (e.Key == Key.Escape)
+                {
+                    IsPaused = true;
+                    PauseMenu.Visibility = Visibility.Visible;
+                }
             }
 
             Draw(gamestate);
-        }
-
-
-        private async void GameCanvas_Loaded(object sender, RoutedEventArgs e)
-        {
-            await GameLoop();
         }
 
         private async void PlayAgain_Click(object sender, RoutedEventArgs e)
@@ -215,7 +231,10 @@ namespace Tetris
 
         private void StartGame_Click(object sender, RoutedEventArgs e)
         {
+            IsPaused = false;
+            Stop = false;
             gamestate = new Gamestatus();
+            PauseMenu.Visibility = Visibility.Hidden;
             MainMenu.Visibility = Visibility.Hidden;
             Game.Visibility = Visibility.Visible;
             GameLoop();
@@ -231,12 +250,33 @@ namespace Tetris
             MainMenu.Visibility = Visibility.Visible;
             Game.Visibility = Visibility.Hidden;
             GameOverMenu.Visibility = Visibility.Hidden;
+            PauseMenu.Visibility = Visibility.Hidden;
+            Stop = true;
         }
 
         private void Option_Click(object sender, RoutedEventArgs e)
         {
             MainMenu.Visibility = Visibility.Hidden;
             OptionMenu.Visibility = Visibility.Visible;
+        }
+
+        private void UnPause_Click(object sender, RoutedEventArgs e)
+        {
+            PauseMenu.Visibility = Visibility.Hidden;
+            IsPaused = false;
+        }
+
+        private void Restart_Click(object sender, RoutedEventArgs e)
+        {
+            Restart_ClickFunction(sender, e);
+        }
+
+        private async Task Restart_ClickFunction(object sender, RoutedEventArgs e)
+        {
+            Stop = true;
+            int delay = Math.Max(minDelay, maxDelay - (gamestate.Score * delayDecrease));
+            await Task.Delay(delay);
+            StartGame_Click(sender, e);
         }
 
         private void Window_Loaded(object sender, RoutedEventArgs e)
@@ -281,6 +321,46 @@ namespace Tetris
             ComboBox comboBox = sender as ComboBox;
             comboBox.SelectedItem = e.Key;
             e.Handled = true;
+        }
+
+        private void PlayBackgroundMusic()
+        {
+            string musicPath = "Music/FullFallingBlocks.mp3";
+
+            backgroundMusicPlayer.Open(new Uri(musicPath, UriKind.Relative));
+            backgroundMusicPlayer.MediaEnded += (sender, e) => backgroundMusicPlayer.Position = TimeSpan.Zero;
+            backgroundMusicPlayer.Play();
+        }
+
+        private void MusicToggle_Checked(object sender, RoutedEventArgs e)
+        {
+            backgroundMusicPlayer.Volume = 1.0;
+        }
+
+        private void MusicToggle_Unchecked(object sender, RoutedEventArgs e)
+        {
+            backgroundMusicPlayer.Volume = 0.0;
+        }
+
+        private void SaveGameState_Click(object sender, RoutedEventArgs e)
+        {
+            JsonSerializerOptions options = new JsonSerializerOptions
+            {
+                WriteIndented = true
+            };
+
+            string jsonString = JsonSerializer.Serialize(gamestate, options);
+            File.WriteAllText("./Save/save.json", jsonString);
+        }
+
+        private void LoadGameState_Click(object sender, RoutedEventArgs e)
+        {
+            Gamestatus LoadedGameState = JsonSerializer.Deserialize<Gamestatus>(File.ReadAllText("./Save/save.json"));
+
+            if (LoadedGameState != null)
+            {
+                gamestate.HeldBlock = LoadedGameState.HeldBlock;
+            }
         }
     }
 }

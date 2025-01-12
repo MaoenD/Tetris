@@ -9,5 +9,9 @@
 //------------------------------------------------------------------------------
 
 [assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("images/icon.ico")]
+[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("music/fullfallingblocks.mp3")]
+[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("save/save.json")]
+[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("music/fallingblocks1.mp3")]
+[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("music/fallingblocks2.mp3")]
 
 
