@@ -4,12 +4,13 @@
 # **Bienvenue dans notre version de Tetris !**
 
 ## **À propos de l'application**
-Notre application propose une version moderne et accessible du célèbre jeu Tetris. Elle s’articule autour d’un **menu principal intuitif** qui vous offre plusieurs fonctionnalités :
+Notre application propose une version moderne et accessible du célèbre jeu Tetris avec musique intég. Elle s’articule autour d’un **menu principal intuitif** qui vous offre plusieurs fonctionnalités :
 - **Lancer une partie :** Plongez immédiatement dans une session de Tetris.
-- **Options de contrôle :** Adaptez les touches de commande à vos préférences. Vous pouvez facilement modifier les commandes en cliquant sur un bouton correspondant à une action, puis en appuyant sur la touche souhaitée.
+- **Options de contrôle :** Adaptez les touches de commande à vos préférences. Vous pouvez facilement modifier les commandes en cliquant sur un bouton correspondant à une action, puis en appuyant sur la touche souhaitée. Ainsi que l'option pour désactiver la musique.
 - **Quitter l'application :** Fermez l'application en toute simplicité.
 
 Pendant une partie, les célèbres pièces emblématiques de Tetris (les Tetriminos) tombent progressivement depuis le haut de la grille. L’objectif est de les placer pour compléter des lignes et marquer des points. La difficulté augmente progressivement, car **la vitesse de chute des pièces s'accélère** à mesure que votre score monte. Une option stratégique est également disponible : **vous pouvez stocker une pièce pour l'utiliser plus tard**, ajoutant une dimension tactique au gameplay.
+Une musique générée par IA vient vous motiver pendant vos parties.
 
 ---
 
